@@ -1,0 +1,82 @@
+- enumerate when looping - for i,val in enumerate(list)
+- context manager rather than closing pdf manually (with statement)
+- nltk, TextBlob, genism 
+
+NLP:
+
+- Clean data
+- Stemming/lemmatization
+- Parts of speech taking
+- Tokenization
+- Corpus
+- Document-Term Matrix: scikit-lean; count vectorizer function to make DTM
+- Pickle data frames for later use in another file (.pkl)
+- pd.read_pickle()
+- Bigrams - two word combos
+
+EDA:
+
+- Top Words
+- # unique words
+- parts of speech
+- Word Clouds
+- wordcloud packages 
+- Counter package 
+- stop words : words that are common and don't help with analysis 
+- Stemming 
+
+NLP Techniques:
+
+1. Sentiment Analysis
+- Input: Corpus
+- Order Matters
+- TextBlob library - built on top of nltk
+- Give each transcript a sentiment 
+score (how pos or negative) and a subjectivity score (how opinionated are they)
+- Polarity Output: -1 to +1 
+- Subjectivity: how objective or subjective you are
+- WordNet: these words are similar to one another - big dictionary created by Princeton
+- POS =  JJ (adjective - parts of speech)
+- Can also use other classification techniques - Logistic Reg, Naive Bayes to see what combination of words determines whether text is positive or negatives
+- Text data - independent assumption with Naive Bayes is okay 
+- Sentiment routine over time
+
+2. Topic Modeling - Unsupervised ML
+- Input: DT Matrix - order doesn't matter
+- Package: gensim, nltk
+- Technique: Latent Dirichlet Allocation (LDA)
+- Goal: find themes or topics across examples
+- Every topics is a mix of probability distribution of words
+- Every document what is the mix of topics
+- Every topic is a mix of words
+- LDA is similar to k means clustering 
+- Specify number of topics and number of iterations 
+- Latent Semantic Indexing (LSI) - SVD for text data
+- Non-Negative Matrix Factorization (NMF) 
+- Also check out spacey package
+
+3. Text Generation
+- Input: Corpus
+- Markov Chains - how systems change over time
+- More Complex: Deep Learning
+- LSTM (Long Short-Term Memory)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
